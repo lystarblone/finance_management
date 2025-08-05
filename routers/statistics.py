@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from ..schemas import StatisticsResponse
-from ..models import Transaction, Category
-from ..database import get_db
+from schemas import StatisticsResponse
+from models import Transaction, Category
+from database import get_db
 
 router = APIRouter(prefix="/statistics", tags=["statistics"])
 

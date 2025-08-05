@@ -1,9 +1,9 @@
 from fastapi import APIRouter, HTTPException, Depends
 from sqlalchemy.orm import Session
 from typing import List, Optional
-from ..schemas import TransactionCreate, TransactionResponse, TransactionType
-from ..models import Transaction, Category
-from ..database import get_db
+from schemas import TransactionCreate, TransactionResponse, TransactionType
+from models import Transaction, Category
+from database import get_db
 
 router = APIRouter(prefix="/transactions", tags=["transactions"])
 
